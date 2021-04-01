@@ -1,5 +1,5 @@
 body{
-	font-family: roboto;
+	font-family: helvetica;
 	margin-bottom: 0;
 	padding: 0;
 	line-height: 1.5;
@@ -186,27 +186,59 @@ html{
 }
 
 
-.av1 {
-  color: white;
-  text-align: right; 
-  margin-right: 0.5em;
-  font-size: 2em;
-}
 
-
-
+ 
 .hero-text {
-  text-align: center;
+  text-align: left;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 37%;
+  left: 10%;
   color: white;
-  font-weight:100;
+  font-weight:400;
 }
 
-  
 
+.hero-text2 {
+  
+  position: absolute;
+  top: 5%;
+  right: 5%;
+    color: white;
+  font-weight:400;
+}
+
+.hero-text3 {
+  
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  color: white;
+  font-weight:400;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: transparent; 
+  color: white; 
+  border: 2px solid white;
+}
+
+.button2:hover {
+  background-color: white;
+  color: black;
+}
 
 .container{
 	padding: 2rem;
@@ -332,8 +364,8 @@ h1{
 
 .accordion {
   height: 12.5vh;
-  background-color: black;
-  color: black;
+  background-color: #090c0f;
+  color: #090c0f;
   cursor: pointer;
   padding: 0% 10% ;
   width: 100%;
@@ -343,12 +375,26 @@ h1{
   font-size: 2em;
   transition: 0.4s;
   font-weight: bold;
+  font-family: helvetica;
 }
 
 .active, .accordion:hover {
   background-color: white;
-
 }
+
+
+.accordion:after {
+  content: '\002B';
+  color: #090c0f;
+  font-weight: 400;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
 
 .panel {
   padding: 0 18px;
@@ -431,13 +477,12 @@ h1{
 }
 
 .video-container:after {
-  content: '';
   z-index: 1;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  
   position: absolute;
 }
 
@@ -478,13 +523,14 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
-
 .didascalia{
   font-style: oblique;
 }
  
+
+ 
+
+
 
 
 
